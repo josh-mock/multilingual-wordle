@@ -66,8 +66,8 @@
 @media (max-width: 475px) {
   .keyboard__key {
     width: var(--size-4xl);
-    height: var(--size-5xl);
-    line-height: var(--size-5xl);
+    height: var(--size-6xl);
+    line-height: var(--size-6xl);
     font-size: var(--size-2xl);
     margin: 0.2rem;
   }
