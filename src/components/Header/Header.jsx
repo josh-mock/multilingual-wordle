@@ -2,7 +2,7 @@ import "./header.css";
 import Instructions from "../Modals/Instructions/Instructions";
 import { useState, useEffect } from "react";
 import { useLang } from "../../contexts/LanguageContext";
-import Controls from "../Controls/Controls";
+import HeaderControls from "../Controls/HeaderControls/HeaderControls";
 
 export default function Header({ onPlayAgain, toggleKeyboard, showKeyboard }) {
   const [showInstructions, setShowInstructions] = useState(false);
@@ -21,7 +21,7 @@ export default function Header({ onPlayAgain, toggleKeyboard, showKeyboard }) {
     <header className="header">
       <h1 className="header__title">{t("title")}</h1>
 
-      <Controls
+      <HeaderControls
         onPlayAgain={onPlayAgain}
         setLang={setLang}
         toggleKeyboard={toggleKeyboard}

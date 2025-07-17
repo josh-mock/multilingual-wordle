@@ -1,7 +1,7 @@
-import "./controls.css";
 import { useLang } from "../../contexts/LanguageContext";
 
 export default function Controls({
+  displayType,
   onPlayAgain,
   setLang,
   toggleKeyboard,
@@ -9,21 +9,27 @@ export default function Controls({
 }) {
   const { t, lang } = useLang();
   return (
-    <div className="controls">
-      <button className="controls__button" onClick={onPlayAgain}>
+    <div className={`${displayType}-controls`}>
+      <button
+        className={`${displayType}-controls__button`}
+        onClick={onPlayAgain}
+      >
         {t("new_game")}
       </button>
       <button
-        className="controls__button"
+        className={`${displayType}-controls__button`}
         onClick={() => setShowInstructions(true)}
       >
         {t("how_to_play")}
       </button>
-      <button className="controls__button" onClick={toggleKeyboard}>
+      <button
+        className={`${displayType}-controls__button`}
+        onClick={toggleKeyboard}
+      >
         {showKeyboard ? t("hide_keyboard") : t("show_keyboard")}
       </button>
       <select
-        className="controls__select"
+        className={`${displayType}-controls__select`}
         value={lang}
         onChange={(e) => {
           setLang(e.target.value);

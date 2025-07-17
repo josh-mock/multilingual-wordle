@@ -1,10 +1,10 @@
-.controls {
+.header-controls {
   display: flex;
   gap: var(--size-base);
 }
 
-.controls__button,
-.controls__select {
+.header-controls__button,
+.header-controls__select {
   background: var(--color-button);
   border-radius: 6px;
   font-size: var(--size-2xl);
@@ -12,8 +12,8 @@
 }
 
 @media (max-width: 475px) {
-  .controls__button,
-  .controls__select {
+  .header-controls__button,
+  .header-controls__select {
     font-size: var(--size-sm);
   }
 }
