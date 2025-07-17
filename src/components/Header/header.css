@@ -9,30 +9,12 @@
   margin-bottom: var(--size-2xs);
 }
 
-.header__controls {
-  display: flex;
-  gap: var(--size-base);
-}
-
-.header__button,
-.header__select {
-  background: var(--color-button);
-  border-radius: 6px;
-  font-size: var(--size-2xl);
-  color: var(--color-button-text);
-}
-
 .header__title {
   font-size: var(--size-5xl);
 }
 
 /* xs */
 @media (max-width: 475px) {
-  .header__button,
-  .header__select {
-    font-size: var(--size-sm);
-  }
-
   .header__title {
     font-size: var(--size-4xl);
   }
