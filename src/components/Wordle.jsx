@@ -3,8 +3,7 @@ import useWordle from "../hooks/useWordle";
 import WordleGrid from "./WordleGrid/WordleGrid";
 import ErrorModal from "./Modals/ErrorModal/ErrorModal";
 import EndGameModal from "./Modals/EndGameModal/EndGameModal";
-import Keyboard from "./Keyboard/keyboard";
-
+import Keyboard from "./Keyboard/Keyboard";
 export default function Wordle({ solution, onPlayAgain, showkeyboard }) {
   const {
     currentGuess,
