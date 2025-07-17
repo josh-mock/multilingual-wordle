@@ -6,6 +6,7 @@ export default function HeaderControls({
   setLang,
   toggleKeyboard,
   showKeyboard,
+  setShowInstructions,
 }) {
   return (
     <Controls
@@ -14,6 +15,7 @@ export default function HeaderControls({
       setLang={setLang}
       toggleKeyboard={toggleKeyboard}
       showKeyboard={showKeyboard}
+      setShowInstructions={setShowInstructions}
     />
   );
 }

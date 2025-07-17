@@ -36,6 +36,7 @@ export default function Header({ onPlayAgain, toggleKeyboard, showKeyboard }) {
         setLang={setLang}
         toggleKeyboard={toggleKeyboard}
         showKeyboard={showKeyboard}
+        setShowInstructions={setShowInstructions}
       />
       {showControls && (
         <DropdownControls
@@ -44,6 +45,7 @@ export default function Header({ onPlayAgain, toggleKeyboard, showKeyboard }) {
           toggleKeyboard={toggleKeyboard}
           showKeyboard={showKeyboard}
           onClose={handleCloseControls}
+          setShowInstructions={setShowInstructions}
         />
       )}
       {showInstructions && <Instructions onClose={handleCloseInstructions} />}

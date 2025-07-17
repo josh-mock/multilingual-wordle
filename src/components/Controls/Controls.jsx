@@ -6,6 +6,7 @@ export default function Controls({
   setLang,
   toggleKeyboard,
   showKeyboard,
+  setShowInstructions
 }) {
   const { t, lang } = useLang();
   return (
