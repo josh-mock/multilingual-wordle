@@ -43,8 +43,8 @@ export default function WordlWideApp() {
 
   console.log(solution);
 
-  const [showKeyboard, setshowKeyboard] = useState(true);
-  const toggleKeyboard = () => setshowKeyboard((prev) => !prev);
+  const [showKeyboard, setShowKeyboard] = useState(true);
+  const toggleKeyboard = () => setShowKeyboard((prev) => !prev);
   const [gameKey, setGameKey] = useState(0);
 
   const handlePlayAgain = async () => {

@@ -3,10 +3,11 @@ import Instructions from "../Modals/Instructions/Instructions";
 import { useState, useEffect } from "react";
 import { useLang } from "../../contexts/LanguageContext";
 import HeaderControls from "../Controls/HeaderControls/HeaderControls";
+import DropdownControls from "../Controls/DropdownControls/DropdownControls";
 
 export default function Header({ onPlayAgain, toggleKeyboard, showKeyboard }) {
   const [showInstructions, setShowInstructions] = useState(false);
-  const [isControlsOpen, setIsControlsOpen] = useState(false);
+  const [showControls, setShowControls] = useState(false);
   const { lang, setLang, t } = useLang();
 
   useEffect(() => {
@@ -17,17 +18,34 @@ export default function Header({ onPlayAgain, toggleKeyboard, showKeyboard }) {
     setShowInstructions(false);
   };
 
+  const handleCloseControls = () => {
+    setShowControls(false);
+  };
+
   return (
     <header className="header">
       <h1 className="header__title">{t("title")}</h1>
-
+      <button
+        className={`btn header__control-toggle`}
+        onClick={() => setShowControls((prev) => !prev)}
+      >
+        {showControls ? t("hide_controls") : t("show_controls")}
+      </button>
       <HeaderControls
         onPlayAgain={onPlayAgain}
         setLang={setLang}
         toggleKeyboard={toggleKeyboard}
         showKeyboard={showKeyboard}
       />
-
+      {showControls && (
+        <DropdownControls
+          onPlayAgain={onPlayAgain}
+          setLang={setLang}
+          toggleKeyboard={toggleKeyboard}
+          showKeyboard={showKeyboard}
+          onClose={handleCloseControls}
+        />
+      )}
       {showInstructions && <Instructions onClose={handleCloseInstructions} />}
     </header>
   );

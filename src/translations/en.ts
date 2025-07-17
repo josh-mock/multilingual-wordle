@@ -27,6 +27,8 @@ const en = {
   oops: "Oops!",
   incorrect_length_error: "Word must be 5 letters long.",
   invalid_word: "Invalid word.",
+  show_controls: "Show controls",
+  hide_controls: "Hide controls"
 };
 
 export default en;

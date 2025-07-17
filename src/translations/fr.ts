@@ -27,5 +27,7 @@ const fr = {
   oops: "Oups!",
   incorrect_length_error: "Le mot doit contenir 5 lettres.",
   invalid_word: "Mot invalide.",
+  show_controls: "Afficher les contrôles",
+  hide_controls: "Masquer les contrôles",
 };
 export default fr;

@@ -11,9 +11,8 @@
   color: var(--color-button-text);
 }
 
-@media (max-width: 475px) {
-  .header-controls__button,
-  .header-controls__select {
-    font-size: var(--size-sm);
+@media (max-width: 640px) {
+  .header-controls {
+    display: none;
   }
 }

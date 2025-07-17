@@ -147,6 +147,12 @@ body {
   padding-right: 0.5rem;
 }
 
+.btn {
+  border-radius: 6px;
+  background-color: var(--color-button);
+  color: var(--color-button-text);
+}
+
 /* 2xl */
 @media (max-width: 1536px) {
   .container {

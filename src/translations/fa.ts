@@ -25,5 +25,7 @@ const fa = {
   duplicate_word_error: "تو قبلاً این کلمه را حدس زده‌ای.",
   oops: "ای وای!",
   incorrect_length_error: "کلمه باید پنج حرفی باشد.",
+  show_controls: "نمایش کنترل‌ها",
+  hide_controls: "پنهان کردن کنترل‌ها",
 };
 export default fa;

@@ -30,6 +30,8 @@ const de = {
   oops: "Ups!",
   incorrect_length_error: "Das Wort muss 5 Buchstaben lang sein.",
   invalid_word: "Ungültiges Wort.",
+  show_controls: "Steuerelemente anzeigen",
+  hide_controls: "Steuerelemente ausblenden",
 };
 
 export default de;

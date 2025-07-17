@@ -24,6 +24,8 @@ const ar = {
   duplicate_word_error: "لقد جرّبت هذه الكلمة من قبل.",
   oops: "أوف!",
   incorrect_length_error: "يجب أن تتكوّن الكلمة من خمسة أحرف.",
+  show_controls: "إظهار عناصر التحكم",
+  hide_controls: "إخفاء عناصر التحكم"
 };
 
 export default ar;

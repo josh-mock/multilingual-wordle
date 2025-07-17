@@ -29,5 +29,7 @@ const es = {
   oops: "¡Uy!",
   incorrect_length_error: "La palabra debe tener 5 letras.",
   invalid_word: "Palabra inválida.",
+  show_controls: "Mostrar controles",
+  hide_controls: "Occultar controles"
 };
 export default es;
