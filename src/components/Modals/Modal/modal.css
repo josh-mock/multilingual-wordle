@@ -13,6 +13,7 @@
 }
 
 .modal div {
+  min-width: 50%;
   max-width: 75%;
   background: var(--white);
   padding: 40px;
@@ -26,14 +27,13 @@
 }
 
 @media (max-width: 475px) {
-  .modal{
-    font-size: var(--size-base)
+  .modal {
+    font-size: var(--size-base);
   }
 }
 
-
 @media (max-width: 320px) {
-  .modal{
-    font-size: var(--size-sm)
+  .modal {
+    font-size: var(--size-sm);
   }
 }
