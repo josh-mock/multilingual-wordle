@@ -33,7 +33,7 @@
   font-weight: bold;
   font-size: var(--size-3xl);
   transition: all 0.3s ease-in;
-  color: var(--color-button-text);
+  color: var(--color-keyboard-text);
 }
 
 .keyboard__key--Backspace,

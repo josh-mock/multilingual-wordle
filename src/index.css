@@ -114,6 +114,7 @@
   --color-tile-border-bounce-100: var(--jet);
   --color-link-hover: var(--royal-blue);
   --color-button-text: var(--jet);
+  --color-keyboard-text: var(--jet);
 
   /* sizes */
   --size-2xs: 0.5rem;
