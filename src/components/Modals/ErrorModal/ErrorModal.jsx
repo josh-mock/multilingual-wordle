@@ -9,7 +9,9 @@ export default function ErrorModal({ error, onClose }) {
       <div className="error-modal__content">
         <h1 className="error-modal__title">{t("oops")}</h1>
         <p className="error-modal__error-text">{error}</p>
-        <button onClick={onClose}>{t("close")}</button>
+        <button className="btn" onClick={onClose}>
+          {t("close")}
+        </button>
       </div>
     </Modal>
   );

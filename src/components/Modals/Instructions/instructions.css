@@ -4,13 +4,14 @@
   gap: 1.5em;
   margin-bottom: 1.5em;
 }
+
 .instructions__instructions--colors {
   gap: 0.5em;
   margin-bottom: 0;
   text-align: start;
 }
+
 .instructions__title {
   margin-bottom: 0.5em;
   text-align: center;
 }
-

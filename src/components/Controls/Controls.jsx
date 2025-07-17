@@ -11,25 +11,25 @@ export default function Controls({
   return (
     <div className={`${displayType}-controls`}>
       <button
-        className={`${displayType}-controls__button ${displayType}-controls__button--${lang}`}
+        className={`btn ${displayType}-controls__button ${displayType}-controls__button--${lang}`}
         onClick={onPlayAgain}
       >
         {t("new_game")}
       </button>
       <button
-        className={`${displayType}-controls__button ${displayType}-controls__button--${lang}`}
+        className={`btn ${displayType}-controls__button ${displayType}-controls__button--${lang}`}
         onClick={() => setShowInstructions(true)}
       >
         {t("how_to_play")}
       </button>
       <button
-        className={`${displayType}-controls__button ${displayType}-controls__button--${lang}`}
+        className={`btn ${displayType}-controls__button ${displayType}-controls__button--${lang}`}
         onClick={toggleKeyboard}
       >
         {showKeyboard ? t("hide_keyboard") : t("show_keyboard")}
       </button>
       <select
-        className={`${displayType}-controls__select ${displayType}-controls__select--${lang}`}
+        className={`btn ${displayType}-controls__select ${displayType}-controls__select--${lang}`}
         value={lang}
         onChange={(e) => {
           setLang(e.target.value);

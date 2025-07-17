@@ -5,10 +5,8 @@
 
 .header-controls__button,
 .header-controls__select {
-  background: var(--color-button);
   border-radius: 6px;
   font-size: var(--size-2xl);
-  color: var(--color-button-text);
 }
 
 @media (max-width: 640px) {

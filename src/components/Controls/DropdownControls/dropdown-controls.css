@@ -11,10 +11,7 @@
 
   .dropdown-controls__button,
   .dropdown-controls__select {
-    background: var(--color-button);
-    border-radius: 6px;
     font-size: var(--size-xl);
-    color: var(--color-button-text);
     width: 12rem;
     text-align: center;
   }

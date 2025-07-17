@@ -23,9 +23,7 @@
   margin: var(--size-2xs);
   width: var(--size-6xl);
   height: var(--size-7xl);
-  background: var(--color-button);
   display: inline-flex;
-  border-radius: 6px;
   line-height: var(--size-7xl);
   text-transform: capitalize;
   justify-content: center;
@@ -33,7 +31,6 @@
   font-weight: bold;
   font-size: var(--size-3xl);
   transition: all 0.3s ease-in;
-  color: var(--color-keyboard-text);
 }
 
 .keyboard__key--Backspace,
@@ -42,7 +39,6 @@
   text-transform: none;
 }
 
-/* sm */
 @media (max-width: 640px) {
   .keyboard {
     margin-bottom: var(--size-3xl);
@@ -62,7 +58,6 @@
   }
 }
 
-/* xs */
 @media (max-width: 475px) {
   .keyboard__key {
     width: var(--size-4xl);

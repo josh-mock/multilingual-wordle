@@ -19,7 +19,9 @@ export default function Instructions({ onClose }) {
           <li className="instructions__instruction">{t("instruction_3")}</li>
           <li className="instructions__instruction">{t("instruction_4")}</li>
         </ul>
-        <button onClick={onClose}>{t("close")}</button>
+        <button className="btn" onClick={onClose}>
+          {t("close")}
+        </button>
       </div>
     </Modal>
   );

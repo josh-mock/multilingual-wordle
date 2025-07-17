@@ -25,7 +25,7 @@ export default function Keyboard({ usedKeys, onKeyClick }) {
               return (
                 <button
                   key={key}
-                  className={`keyboard__key keyboard__key--${color} ${
+                  className={`btn keyboard__key keyboard__key--${color} ${
                     key === "Backspace" || key === "Enter"
                       ? `keyboard__key--${key} keyboard__key--${key}-${lang}`
                       : ""

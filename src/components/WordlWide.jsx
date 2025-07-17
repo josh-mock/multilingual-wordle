@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import useWordlWide from "../hooks/useWordlWide";
-import WordleGrid from "./WordleGrid/WordleGrid";
-import ErrorModal from "./Modals/ErrorModal/ErrorModal";
-import EndGameModal from "./Modals/EndGameModal/EndGameModal";
 import Keyboard from "./Keyboard/Keyboard";
+import EndGameModal from "./Modals/EndGameModal/EndGameModal";
+import ErrorModal from "./Modals/ErrorModal/ErrorModal";
+import WordleGrid from "./WordleGrid/WordleGrid";
 export default function WordlWide({ solution, onPlayAgain, showKeyboard }) {
   const {
     currentGuess,

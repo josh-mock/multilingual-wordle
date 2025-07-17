@@ -17,7 +17,6 @@
   display: none;
 }
 
-/* xs */
 @media (max-width: 475px) {
   .header__title {
     font-size: var(--size-4xl);

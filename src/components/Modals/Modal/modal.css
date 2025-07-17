@@ -24,9 +24,6 @@
 .modal button {
   display: block;
   margin: 0 auto;
-  background-color: var(--color-button);
-  border-radius: 6px;
-  color: var(--color-button-text)
 }
 
 @media (max-width: 475px) {
