@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import WordleApp from "./WordleApp";
+import WordlWideApp from "./WordlWideApp";
 import { LanguageProvider } from "./contexts/LanguageContext";
 
 const queryClient = new QueryClient();
@@ -8,7 +8,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <LanguageProvider>
-        <WordleApp />
+        <WordlWideApp />
       </LanguageProvider>
     </QueryClientProvider>
   );

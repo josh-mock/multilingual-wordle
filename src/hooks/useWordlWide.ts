@@ -32,7 +32,7 @@ const isGuessValid = async (
   }
 };
 
-const useWordle = (solution: string) => {
+const useWordlWide = (solution: string) => {
   const [turn, setTurn] = useState<number>(0);
   const [currentGuess, setCurrentGuess] = useState<string>("");
   const [guesses, setGuesses] = useState([...Array(6)]); // each guess is an array
@@ -181,4 +181,4 @@ const useWordle = (solution: string) => {
   };
 };
 
-export default useWordle;
+export default useWordlWide;

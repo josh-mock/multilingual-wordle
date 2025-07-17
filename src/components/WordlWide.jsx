@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import useWordle from "../hooks/useWordle";
+import useWordlWide from "../hooks/useWordlWide";
 import WordleGrid from "./WordleGrid/WordleGrid";
 import ErrorModal from "./Modals/ErrorModal/ErrorModal";
 import EndGameModal from "./Modals/EndGameModal/EndGameModal";
 import Keyboard from "./Keyboard/Keyboard";
-export default function Wordle({ solution, onPlayAgain, showkeyboard }) {
+export default function WordlWide({ solution, onPlayAgain, showkeyboard }) {
   const {
     currentGuess,
     guesses,
@@ -14,7 +14,7 @@ export default function Wordle({ solution, onPlayAgain, showkeyboard }) {
     handleKeyup,
     error,
     setError,
-  } = useWordle(solution);
+  } = useWordlWide(solution);
   const [showModal, setShowModal] = useState(false);
   const [showErrorModal, setShowErrorModal] = useState(false);
 
