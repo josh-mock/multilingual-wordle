@@ -41,6 +41,8 @@ export default function WordlWideApp() {
     refetchOnWindowFocus: false,
   });
 
+  console.log(solution)
+
   const [showkeyboard, setShowkeyboard] = useState(true);
   const togglekeyboard = () => setShowkeyboard((prev) => !prev);
   const [gameKey, setGameKey] = useState(0);

@@ -13,6 +13,7 @@
 }
 
 .modal div {
+  min-width: 30rem;
   max-width: 48rem;
   background: var(--white);
   padding: 40px;
@@ -23,6 +24,8 @@
 .modal button {
   display: block;
   margin: 0 auto;
+  background-color: var(--color-button);
+  border-radius: 6px;
 }
 
 @media (max-width: 475px) {
