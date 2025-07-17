@@ -28,6 +28,7 @@ npm run dev
 - [Vite](https://vitejs.dev/)
 - [React Query](https://tanstack.com/query/latest)
 - HTML5, CSS3, JavaScript, TypeScript
+- [intl-messageformat](https://www.npmjs.com/package/intl-messageformat)
 
 ## Features
 
@@ -36,6 +37,7 @@ npm run dev
 - English, French, Spanish, and German word validation using [Free Dictionary Api](https://freedictionaryapi.com/).
 - English solutions provided by
 - Accessible design.
+- Translation of components using localisation provider.
 
 ## License
 
