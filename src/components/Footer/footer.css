@@ -1,0 +1,10 @@
+.footer {
+  text-align: center;
+  font-size: var(--size-base);
+}
+
+@media (max-width: 475px) {
+  .footer {
+    font-size: var(--size-xs);
+  }
+}

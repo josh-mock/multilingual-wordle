@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+:root {
+  /* BASE COLORS */
+  /* KELLY GREEN */
+  --kelly-green-h: 120;
+  --kelly-green-s: 100%;
+  --kelly-green-l: 35%;
+  --kelly-green: hsl(
+    var(--kelly-green-h),
+    var(--kelly-green-s),
+    var(--kelly-green-l)
+  );
+
+  /* YELLOW */
+  --yellow-h: 60;
+  --yellow-s: 100%;
+  --yellow-l: 50%;
+  --yellow: hsl(var(--yellow-h), var(--yellow-s), var(--yellow-l));
+
+  /* CADET GREY */
+  --cadet-grey-h: 0;
+  --cadet-grey-s: 0%;
+  --cadet-grey-l: 63%;
+  --cadet-grey: hsl(
+    var(--cadet-grey-h),
+    var(--cadet-grey-s),
+    var(--cadet-grey-l)
+  );
+
+  /* WHITE */
+  --white-h: 0;
+  --white-s: 0%;
+  --white-l: 100%;
+  --white-a: 0.7;
+  --white: hsl(var(--white-h), var(--white-s), var(--white-l));
+  --white-alpha: hsla(
+    var(--white-h),
+    var(--white-s),
+    var(--white-l),
+    var(--white-a)
+  );
+
+  /* ANTI-FLASH WHITE */
+  --anti-flash-white-h: 0;
+  --anti-flash-white-s: 0%;
+  --anti-flash-white-l: 93%;
+  --anti-flash-white: hsl(
+    var(--anti-flash-white-h),
+    var(--anti-flash-white-s),
+    var(--anti-flash-white-l)
+  );
+
+  /* BLACK */
+  --black-h: 0;
+  --black-s: 0%;
+  --black-l: 0%;
+  --black-a: 0.3;
+  --black: hsl(var(--black-h), var(--black-s), var(--black-l));
+  --black-alpha: hsla(
+    var(--black-h),
+    var(--black-s),
+    var(--black-l),
+    var(--black-a)
+  );
+
+  /* JET */
+  --jet-h: 0;
+  --jet-s: 0%;
+  --jet-l: 20%;
+  --jet: hsl(var(--jet-h), var(--jet-s), var(--jet-l));
+
+  /* SILVER */
+  --silver-h: 0;
+  --silver-s: 0%;
+  --silver-l: 73%;
+  --silver: hsl(var(--silver-h), var(--silver-s), var(--silver-l));
+
+  /* FOLLY */
+  --folly-h: 342;
+  --folly-s: 100%;
+  --folly-l: 50%;
+  --folly: hsl(var(--folly-h), var(--folly-s), var(--folly-l));
+
+  /* PLATINUM */
+  --platinum-h: 0;
+  --platinum-s: 0%;
+  --platinum-l: 87%;
+  --platinum: hsl(var(--platinum-h), var(--platinum-s), var(--platinum-l));
+
+  /* ROYAL BLUE */
+  --royal-blue-h: 219;
+  --royal-blue-s: 94%;
+  --royal-blue-l: 34%;
+  --royal-blue: hsl(
+    var(--royal-blue-h),
+    var(--royal-blue-s),
+    var(--royal-blue-l)
+  );
+
+  /* SEMANTIC COLOR ALIASES */
+  --color-correct: var(--kelly-green);
+  --color-present: var(--yellow);
+  --color-absent: var(--cadet-grey);
+  --color-button: var(--anti-flash-white);
+  --color-header-border: var(--anti-flash-white);
+  --color-solution: var(--folly);
+  --color-modal: var(--white-alpha);
+  --color-modal-shadow: var(--black-alpha);
+  --color-tile-border: var(--silver);
+  --color-tile-before-submit: var(--white);
+  --color-tile-border-filled: var(--jet);
+  --color-tile-border-bounce-0: var(--platinum);
+  --color-tile-border-bounce-100: var(--jet);
+  --color-link-hover: var(--royal-blue);
+
+  /* sizes */
+  --size-2xs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+body {
+  font-family: "verdana", "Rubik";
+  color: var(--jet);
+}
+
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
+/* 2xs */
+@media (max-width: 320px) {
+  .container {
+    width: 100%;
+  }
+}

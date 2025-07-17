@@ -1,0 +1,161 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100dvh;
+  interpolate-size: allow-keywords;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  margin: 0;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  min-height: 100dvh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+blockquote,
+address,
+article,
+aside,
+details,
+dialogue,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+header,
+hr,
+main,
+nav,
+pre,
+section,
+table,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-link-hover);
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.typographic {
+  list-style: revert;
+  padding-inline-start: revert;
+}
+
+.button *,
+.btn *,
+button * {
+  pointer-events: null;
+}
+
+.button,
+.btn,
+button {
+  user-select: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+textareat {
+  field-sizing: content;
+}
+*/
+
+/*****************************
+* ACCESSIBILITY
+******************************/
+/* For 'accessibility text'. If your button only has an image inside it that isn't good for accessibility. Put a span inside there and give it this class and put some descriptive text for what the button does into the span. */
+
+.visually-hidden,
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  clip-path: auto;
+  -webkit-clip-path: auto;
+  white-space: normal;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+}

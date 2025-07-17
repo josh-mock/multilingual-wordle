@@ -1,0 +1,11 @@
+.error-modal__content {
+  text-align: center;
+}
+
+.error-modal__title {
+  margin-bottom: var(--size-2xs);
+}
+
+.error-modal__error-text {
+  margin-bottom: var(--size-2xl);
+}

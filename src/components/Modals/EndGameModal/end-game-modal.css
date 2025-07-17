@@ -1,0 +1,19 @@
+.end-game__content {
+  text-align: center;
+}
+
+.end-game__title {
+  margin-bottom: var(--size-base);
+}
+
+.end-game__body {
+  margin-bottom: var(--size-base);
+}
+
+.end-game__body--solution {
+  color: var(--color-solution);
+  font-weight: bold;
+  font-size: 0.var(--size-sm);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
