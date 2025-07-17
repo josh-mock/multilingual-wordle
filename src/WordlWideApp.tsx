@@ -41,10 +41,10 @@ export default function WordlWideApp() {
     refetchOnWindowFocus: false,
   });
 
-  console.log(solution)
+  console.log(solution);
 
-  const [showkeyboard, setShowkeyboard] = useState(true);
-  const togglekeyboard = () => setShowkeyboard((prev) => !prev);
+  const [showKeyboard, setshowKeyboard] = useState(true);
+  const toggleKeyboard = () => setshowKeyboard((prev) => !prev);
   const [gameKey, setGameKey] = useState(0);
 
   const handlePlayAgain = async () => {
@@ -59,15 +59,15 @@ export default function WordlWideApp() {
     <div className="container">
       <Header
         onPlayAgain={handlePlayAgain}
-        togglekeyboard={togglekeyboard}
-        showkeyboard={showkeyboard}
+        toggleKeyboard={toggleKeyboard}
+        showKeyboard={showKeyboard}
       />
       {solution && (
         <WordlWide
           key={gameKey}
           solution={solution}
           onPlayAgain={handlePlayAgain}
-          showkeyboard={showkeyboard}
+          showKeyboard={showKeyboard}
         />
       )}
       <Footer />

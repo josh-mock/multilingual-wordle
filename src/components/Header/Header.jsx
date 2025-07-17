@@ -2,9 +2,11 @@ import "./header.css";
 import Instructions from "../Modals/Instructions/Instructions";
 import { useState, useEffect } from "react";
 import { useLang } from "../../contexts/LanguageContext";
+import Controls from "../Controls/Controls";
 
-export default function Header({ onPlayAgain, togglekeyboard, showkeyboard }) {
+export default function Header({ onPlayAgain, toggleKeyboard, showKeyboard }) {
   const [showInstructions, setShowInstructions] = useState(false);
+  const [isControlsOpen, setIsControlsOpen] = useState(false);
   const { lang, setLang, t } = useLang();
 
   useEffect(() => {
@@ -19,35 +21,12 @@ export default function Header({ onPlayAgain, togglekeyboard, showkeyboard }) {
     <header className="header">
       <h1 className="header__title">{t("title")}</h1>
 
-      <div className="header__controls">
-        <button className="header__button" onClick={onPlayAgain}>
-          {t("new_game")}
-        </button>
-        <button
-          className="header__button"
-          onClick={() => setShowInstructions(true)}
-        >
-          {t("how_to_play")}
-        </button>
-        <button className="header__button" onClick={togglekeyboard}>
-          {showkeyboard ? t("hide_keyboard") : t("show_keyboard")}
-        </button>
-        <select
-          className="header__select"
-          value={lang}
-          onChange={(e) => {
-            setLang(e.target.value);
-            onPlayAgain();
-          }}
-        >
-          <option value="en">🇬🇧 EN</option>
-          <option value="ar">🇸🇦 AR</option>
-          <option value="de">🇩🇪 DE</option>
-          <option value="es">🇪🇸 ES</option>
-          <option value="fa">🇮🇷 FA</option>
-          <option value="fr">🇫🇷 FR</option>
-        </select>
-      </div>
+      <Controls
+        onPlayAgain={onPlayAgain}
+        setLang={setLang}
+        toggleKeyboard={toggleKeyboard}
+        showKeyboard={showKeyboard}
+      />
 
       {showInstructions && <Instructions onClose={handleCloseInstructions} />}
     </header>

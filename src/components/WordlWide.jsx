@@ -4,7 +4,7 @@ import WordleGrid from "./WordleGrid/WordleGrid";
 import ErrorModal from "./Modals/ErrorModal/ErrorModal";
 import EndGameModal from "./Modals/EndGameModal/EndGameModal";
 import Keyboard from "./Keyboard/Keyboard";
-export default function WordlWide({ solution, onPlayAgain, showkeyboard }) {
+export default function WordlWide({ solution, onPlayAgain, showKeyboard }) {
   const {
     currentGuess,
     guesses,
@@ -46,7 +46,7 @@ export default function WordlWide({ solution, onPlayAgain, showkeyboard }) {
   return (
     <div>
       <WordleGrid guesses={guesses} currentGuess={currentGuess} turn={turn} />
-      {showkeyboard && (
+      {showKeyboard && (
         <Keyboard usedKeys={usedKeys} onKeyClick={handleKeyup} />
       )}
       {showModal && (
