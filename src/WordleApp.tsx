@@ -41,8 +41,6 @@ export default function WordleApp() {
     refetchOnWindowFocus: false,
   });
 
-  console.log(solution);
-
   const [showKeyboard, setShowKeyboard] = useState(true);
   const toggleKeyboard = () => setShowKeyboard((prev) => !prev);
   const [gameKey, setGameKey] = useState(0);
