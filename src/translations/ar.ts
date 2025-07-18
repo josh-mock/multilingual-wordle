@@ -25,7 +25,9 @@ const ar = {
   oops: "أوف!",
   incorrect_length_error: "يجب أن تتكوّن الكلمة من خمسة أحرف.",
   show_controls: "إظهار عناصر التحكم",
-  hide_controls: "إخفاء عناصر التحكم"
+  hide_controls: "إخفاء عناصر التحكم",
+  footer:
+    '<p>صُنع بواسطة <a href="https://josh-mock.com">جوش موك</a>. التحقق من الكلمات بالإنجليزية، الفرنسية، الإسبانية، والألمانية باستخدام <a href="https://freedictionaryapi.com">واجهة برمجة تطبيقات القاموس المجاني</a>. هذا المشروع نسخة غير تجارية مستوحاة من <a href="https://www.nytimes.com/games/wordle/index.html">Wordle</a>. ولا علاقة له أو تأييد من قبل صحيفة نيويورك تايمز.</p>',
 };
 
 export default ar;

@@ -28,7 +28,9 @@ const en = {
   incorrect_length_error: "Word must be 5 letters long.",
   invalid_word: "Invalid word.",
   show_controls: "Show controls",
-  hide_controls: "Hide controls"
+  hide_controls: "Hide controls",
+  footer:
+    '<p>Made by <a href="https://josh-mock.com">Josh Mock</a>. English, French, Spanish, and German word validation using the <a href="https://freedictionaryapi.com">Free Dictionary API</a>. This project is a non-commercial clone inspired by <a href="https://www.nytimes.com/games/wordle/index.html">Wordle</a>. It is not affiliated with or endorsed by The New York Times</p>',
 };
 
 export default en;

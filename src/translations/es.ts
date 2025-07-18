@@ -30,6 +30,8 @@ const es = {
   incorrect_length_error: "La palabra debe tener 5 letras.",
   invalid_word: "Palabra inválida.",
   show_controls: "Mostrar controles",
-  hide_controls: "Occultar controles"
+  hide_controls: "Occultar controles",
+  footer:
+    '<p>Hecho por <a href="https://josh-mock.com">Josh Mock</a>. Validación de palabras en inglés, francés, español y alemán usando la <a href="https://freedictionaryapi.com">API de Free Dictionary</a>. Este proyecto es una copia no comercial inspirada en <a href="https://www.nytimes.com/games/wordle/index.html">Wordle</a>. No está afiliado ni respaldado por The New York Times.</p>',
 };
 export default es;

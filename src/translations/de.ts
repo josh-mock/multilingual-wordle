@@ -32,6 +32,8 @@ const de = {
   invalid_word: "Ungültiges Wort.",
   show_controls: "Steuerelemente anzeigen",
   hide_controls: "Steuerelemente ausblenden",
+  footer:
+    '<p>Erstellt von <a href="https://josh-mock.com">Josh Mock</a>. Wortvalidierung in Englisch, Französisch, Spanisch und Deutsch mit der <a href="https://freedictionaryapi.com">Free Dictionary API</a>. Dieses Projekt ist eine nicht-kommerzielle Nachbildung, inspiriert von <a href="https://www.nytimes.com/games/wordle/index.html">Wordle</a>. Es steht in keiner Verbindung zur New York Times und wird von ihr nicht unterstützt.</p>',
 };
 
 export default de;

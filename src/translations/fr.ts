@@ -29,5 +29,7 @@ const fr = {
   invalid_word: "Mot invalide.",
   show_controls: "Afficher les contrôles",
   hide_controls: "Masquer les contrôles",
+  footer:
+    'Créé par <a href="https://josh-mock.com">Josh Mock</a>. Validation de mots en anglais, français, espagnol et allemand à l’aide de l’<a href="https://freedictionaryapi.com">API Free Dictionary</a>. Ce projet est une reproduction non commerciale inspirée de <a href="https://www.nytimes.com/games/wordle/index.html">Wordle</a>. Il n’est ni affilié ni approuvé par le New York Times.',
 };
 export default fr;

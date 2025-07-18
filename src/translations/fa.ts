@@ -27,5 +27,7 @@ const fa = {
   incorrect_length_error: "کلمه باید پنج حرفی باشد.",
   show_controls: "نمایش کنترل‌ها",
   hide_controls: "پنهان کردن کنترل‌ها",
+  footer:
+    '<p>ساخته شده توسط <a href="https://josh-mock.com">جاش موک</a>. اعتبارسنجی کلمات به زبان‌های انگلیسی، فرانسوی، اسپانیایی و آلمانی با استفاده از <a href="https://freedictionaryapi.com">رابط برنامه‌نویسی Free Dictionary</a>. این پروژه یک نسخه غیرتجاری الهام‌گرفته از <a href="https://www.nytimes.com/games/wordle/index.html">وردل (Wordle)</a> است. این پروژه هیچ ارتباطی با نیویورک تایمز ندارد و مورد تأیید آن نیست.</p>',
 };
 export default fa;

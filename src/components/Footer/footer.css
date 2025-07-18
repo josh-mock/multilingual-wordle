@@ -1,6 +1,7 @@
 .footer {
   text-align: center;
   font-size: var(--size-base);
+  margin-bottom: var(--size-base);
 }
 
 @media (max-width: 475px) {
