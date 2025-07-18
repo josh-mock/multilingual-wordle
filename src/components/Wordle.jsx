@@ -4,7 +4,7 @@ import Keyboard from "./Keyboard/Keyboard";
 import EndGameModal from "./Modals/EndGameModal/EndGameModal";
 import ErrorModal from "./Modals/ErrorModal/ErrorModal";
 import WordleGrid from "./WordleGrid/WordleGrid";
-export default function WordlWide({ solution, onPlayAgain, showKeyboard }) {
+export default function Wordle({ solution, onPlayAgain, showKeyboard }) {
   const {
     currentGuess,
     guesses,

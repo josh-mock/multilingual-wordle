@@ -1,4 +1,4 @@
-# WordlWide
+# Multilingual Wordle
 
 A multilingual word guessing game inspired by [Wordle](https://www.nytimes.com/games/wordle/index.html).
 
@@ -13,9 +13,9 @@ The site is live at [this link](https://josh-mock.com).
 ## Cloning the site
 
 ```bash
-git clone https://github.com/josh-mock/wordlwide.git
+git clone https://github.com/josh-mock/multilingual-wordle.git
 
-cd wordlwide
+cd multilingual-wordle
 
 npm install
 

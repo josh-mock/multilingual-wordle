@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
-import WordlWide from "./components/WordlWide";
+import WordlWide from "./components/Wordle";
 import Header from "./components/Header/Header";
 import { useLang } from "./contexts/LanguageContext";
 import words from "./words";
@@ -26,7 +26,7 @@ const fetchSolution = async (lang: string): Promise<string> => {
   }
 };
 
-export default function WordlWideApp() {
+export default function WordleApp() {
   const { lang, t } = useLang();
 
   const {
