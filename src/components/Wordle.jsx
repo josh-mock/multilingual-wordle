@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import useWordlWide from "../hooks/useWordlWide";
+import useWordle from "../hooks/useWordle";
 import Keyboard from "./Keyboard/Keyboard";
 import EndGameModal from "./Modals/EndGameModal/EndGameModal";
 import ErrorModal from "./Modals/ErrorModal/ErrorModal";
@@ -14,7 +14,7 @@ export default function Wordle({ solution, onPlayAgain, showKeyboard }) {
     handleKeyup,
     error,
     setError,
-  } = useWordlWide(solution);
+  } = useWordle(solution);
   const [showModal, setShowModal] = useState(false);
   const [showErrorModal, setShowErrorModal] = useState(false);
 
